@@ -9,3 +9,8 @@ export const isString = {
 export const isObject = {
 	options: value => typeof value === 'object'
 };
+
+export const isBoolean = {
+	options: value => typeof value === 'boolean'
+};
+
