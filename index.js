@@ -1,16 +1,43 @@
+/**
+ * Value should be found in the body (can be omiited)
+ */
+export const optionalInBody = {
+	in: ['body'],
+	optional: true
+};
+
+/**
+ * Ensures field value is an array
+ */
 export const isArray = {
-	options: value => Array.isArray(value)
+	custom: {
+		options: value => Array.isArray(value)
+	}
 };
 
+/**
+ * Ensures field value is a string
+ */
 export const isString = {
-	options: value => typeof value === 'string'
+	custom: {
+		options: value => typeof value === 'string'
+	}
 };
 
+/**
+ * Ensures field value is an object
+ */
 export const isObject = {
-	options: value => typeof value === 'object'
+	custom: {
+		options: value => typeof value === 'object'
+	}
 };
 
+/**
+ * Ensures field value is a boolean
+ */
 export const isBoolean = {
-	options: value => typeof value === 'boolean'
+	custom: {
+		options: value => typeof value === 'boolean'
+	}
 };
-
