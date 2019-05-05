@@ -41,3 +41,13 @@ export const isBoolean = {
 		options: value => typeof value === 'boolean'
 	}
 };
+
+/**
+ * Ensures field value is from provided array
+ */
+const oneOf = (array, customMessage) => ({
+	custom: {
+		errorMessage: customMessage || `value must be one of [${array.join(', ').replace(/, ([^,]*)$/, ' or $1')}]`,
+		options: value => array.includes(value)
+	}
+});
