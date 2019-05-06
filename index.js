@@ -1,3 +1,8 @@
+import { createLogger } from 'utils/lib';
+import tracer from 'tracer';
+
+const logger = process.env.NODE_ENV === 'tracer' ? tracer.colorConsole() : createLogger();
+
 /**
  * Value should be found in the body (can be omiited)
  */

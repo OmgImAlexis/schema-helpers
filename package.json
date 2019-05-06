@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Alexis Tyler <xo@wvvw.me> (https://wvvw.me/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "tracer": "^0.9.8",
+    "utils": "ssh://git@github.com:unraid/utils.git"
+  }
 }
