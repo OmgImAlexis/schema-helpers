@@ -63,7 +63,7 @@ export const oneOf = array => ({
  * @param {Validator[]} validators 
  * @returns {Object}
  */
-const validationArray = validators => {
+export const validationArray = validators => {
 	let errors = [];
 
 	return {
